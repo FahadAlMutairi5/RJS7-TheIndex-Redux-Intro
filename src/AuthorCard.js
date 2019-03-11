@@ -20,7 +20,7 @@ class AuthorCard extends Component {
             </h5>
             <small className="card-text">{author.books.length} books</small>
           </div>
-          <button className="btn btn-danger"> DELETE</button>
+          <button className="btn btn-danger" onClick={()=>this.props.deleteAuthorHandler(author)}> DELETE</button>
         </div>
       </div>
     );
